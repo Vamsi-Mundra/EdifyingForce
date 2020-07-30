@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav > li > a:hover{
+  border-bottom: 2px solid #444;
+  background-color: white;
+}
+
+.signinNav{
+  border-bottom: 2px solid #fff;
+  background-color: white;
+}
+
+.navVisited{
+  border-bottom: 2px solid #1569e0;
+  background-color: white;
+}
+
+.navHover{
+  border-bottom: 2px solid #444;
+  background-color: white;
+}
+
+.nav > li > a{
+  background-color:white;
+  color: black;
+}
+
+.searchBar:hover{
+  border: "1px solid brown";
+  background-color: cadetblue;
+}
+
+.inner > li > a:hover{
+  background-color:white;
+  color: white;
+}
+
+.jobTile:hover {
+  background-color:rgb(240, 240, 240);
+  border-left: 4px solid grey;
+  cursor: pointer ;
+  text-decoration: underline !important;
+}
+.jobTile {
+  border-left: 4px solid white;
+  text-decoration: underline !important;
+}
+
+.jobTileActive {
+  border-left: 4px solid #1569e0;
+  background-color:#f0f3fa !important;
+  cursor: pointer ;
+  text-decoration: underline !important;
+}
+
+.messageTile:hover {
+  background-color:rgb(240, 240, 240);
+  border-left: 4px solid rgb(240, 240, 240);
+  cursor: pointer ;
+}
+.messageTile {
+  border-left: 4px solid white;
+  cursor: pointer ;
+}
+
+.messageTileActive {
+  border-left: 4px solid #1569e0;
+  background-color:rgb(240, 240, 240) !important;
+  cursor: pointer ;
+}
+
+.jobTileText:hover {
+  text-decoration: underline !important;
+}
+
+.trial {
+ border-radius: 15px;
+}
+
+.editicon:hover{
+  background-color:#e8e9eb;
+}
+
+.addSchool{
+  color: green;
+}
+
+.unclickedFilter{
+  background-color: white !important;
+  border-radius: 15px !important;
+  border: 1px solid #1569e0 !important;
+  color: #1569e0 !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  padding: 5px 11px !important;
+  margin: 0 8px 8px 0 !important;
+  box-shadow: none !important;
+}
+
+.clickedFilter{
+  background-color: #1569e0 !important;
+  border-radius: 15px !important;
+  border: 1px solid #1569e0 !important;
+  color: white !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  padding: 5px 11px !important;
+  margin: 0 8px 8px 0 !important;
+  box-shadow: none !important;
+}
+
+.senderMessage {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+.receiverMessage {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sender {
+background-color:#d1e0e0;
+padding: 5px 10px 5px;
+border-radius: 7px;
+margin: 5px;
+}
+
+.receiver {
+background-color: wheat;
+padding: 5px 10px 5px;
+border-radius: 7px;
+margin: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(167, 167, 167); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.changePhoto:hover {
+  border: 1.5px solid;
+}
