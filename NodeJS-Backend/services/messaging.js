@@ -20,7 +20,7 @@ exports.fetchProfileDetails = async (participants) => {
     let data = [];
     data = await operations.findDocumentsByQuery(student, { id: { $in: participants } }, { id: 1, name: 1, image: 1, college: 1 })
     if (data.length > 0) return data;
-    return await operations.findDocumentsByQuery(company, { id: { $in: participants } }, { id: 1, name: 1, image: 1, location: 1 })
+    return await operations.findDocumentsByQuery(company, { id: { $in: participants } }, { id: 1, name: 1, mentorName: 1, image: 1, location: 1 })
 }
 
 exports.fetchMessages = async (id) => {

@@ -183,7 +183,7 @@ class Messages extends Component {
                 <div className="col-md-8" style={{ paddingLeft: "3px", alignContent: "center", height: "100%", overflowX: "none", overflowY: "none" }}>
                     <Card style={{ padding: "5px", marginBottom: "3px", zIndex: "1000", width: "100%", borderRadius: "0px" }}>
                         <p style={{ padding: "0px", margin: "0px", fontSize: "17px", fontWeight: "700", textAlign: "center" }}>
-                            {!_.isUndefined(this.state.currentConversation.receiver) ? this.state.currentConversation.receiver.name : ""}
+                            {!_.isUndefined(this.state.currentConversation.receiver) ? (this.state.currentConversation.receiver.mentorName ? this.state.currentConversation.receiver.mentorName: this.state.currentConversation.receiver.name) : ""}
                         </p>
                         <p style={{ padding: "0px", margin: "0px", fontSize: "12px", fontWeight: "500", textAlign: "center" }}>
                             {!_.isUndefined(this.state.currentConversation.receiver.college) ? this.state.currentConversation.receiver.college : this.state.currentConversation.receiver.location}
@@ -252,7 +252,7 @@ class Messages extends Component {
                                                 <div className="col-md-9" style={{ marginLeft: "10px", paddingTop: "10px" }}>
                                                     <CardContent className="" style={{ paddingBottom: "5px", paddingLeft: "5px", paddingTop: "10px", marginTop: "0px" }}>
                                                         <Typography gutterBottom variant="h5" style={{ marginBottom: "2px" }}>
-                                                            <b>{conversation.receiver.name}</b>
+                                                            <b>{(conversation.receiver.mentorName ? conversation.receiver.mentorName: conversation.receiver.name) }</b>
                                                             <p style={{ fontSize: "12px" }}>{conversation.conversations.length > 0 ?
                                                                 ((conversation.conversations[conversation.conversations.length - 1].id === sessionStorage.getItem("id")
                                                                     ? "You: " : "") + "" + conversation.conversations[conversation.conversations.length - 1].message)
