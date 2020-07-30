@@ -31,7 +31,13 @@ const s3 = new AWS.S3({
   accessKeyId: process.env.ACCESS_KEY,
   secretAccessKey: process.env.SECRET_KEY,
 });
-
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', process.env.REACT_URL);
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
+  next();
+});
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     if (file.mimetype === 'application/pdf') {
