@@ -40,6 +40,6 @@ Our Team believes that "Talent is distributed equally across the communities but
 ## What's next for EdifyingForce
 We want to extend the additional tools required like the Job Postings, Video conferencing tools and all other features which can ease the interaction between the mentor and students.
 ## Team
-Prashanth Thipparthi - [GitHub](https://github.com/prashanth-thipparthi) [LinkedIn](https://www.linkedin.com/in/prashanth-thipparthi/)
-Vamsi Mundra - [GitHub](https://github.com/Vamsi-Mundra) [LinkedIn](https://www.linkedin.com/in/vamsimundra/)
-Akhil Reddy Mandadi - [GitHub](https://github.com/akhilmandadi)  [LinkedIn](https://www.linkedin.com/in/akhilreddymandadi/)
+ - Prashanth Thipparthi - [GitHub](https://github.com/prashanth-thipparthi) [LinkedIn](https://www.linkedin.com/in/prashanth-thipparthi/)
+ - Vamsi Mundra - [GitHub](https://github.com/Vamsi-Mundra) [LinkedIn](https://www.linkedin.com/in/vamsimundra/)
+ - Akhil Reddy Mandadi - [GitHub](https://github.com/akhilmandadi)  [LinkedIn](https://www.linkedin.com/in/akhilreddymandadi/)
