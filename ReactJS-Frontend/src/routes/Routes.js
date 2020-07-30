@@ -20,7 +20,6 @@ import EventsSearch from '../components/student/eventSearch';
 import EventDetails from '../components/student/event';
 import StudentRegistrations from '../components/student/registrations';
 import Messages from '../components/messages';
-
 class Routes extends Component {
   render() {
     return (

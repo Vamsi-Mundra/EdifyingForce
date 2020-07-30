@@ -34,6 +34,15 @@ class NavBar extends Component {
     }
 
     render() {
+        let redirectVar = null;
+        if (!sessionStorage.getItem("persona")) redirectVar = <Redirect to="/signin" />
+        
+        if( window.location.pathname.match(/^\/aboutus/)){
+            window.location.pathname = '/aboutus';
+        } else {
+            redirectVar = <Redirect to="/signin" />
+        }
+
         let navBar = null;
         if (sessionStorage.getItem("email") !== null && sessionStorage.getItem("persona") === "company") {
             navBar = (
@@ -76,13 +85,14 @@ class NavBar extends Component {
         } else {
             navBar = (
                 <ul class="nav navbar-nav navbar-right">
+                    <li><Link className="signinNav" to="/aboutus" style={{ color: "black" }}>About Us</Link></li>
                     <li><Link className="signinNav" to="/signin" style={{ color: "black" }}><span class="glyphicon glyphicon-log-in"></span> LogIn</Link></li>
                     <li><Link className="signinNav" to="/signup" style={{ color: "black" }}><span class="glyphicon glyphicon-user"></span> SignUp</Link></li>
                 </ul>
             )
         }
-        let redirectVar = null;
-        if (!sessionStorage.getItem("persona")) redirectVar = <Redirect to="/signin" />
+        
+        
         return (
             <div>
                 {redirectVar}
