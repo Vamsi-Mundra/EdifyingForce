@@ -61,7 +61,10 @@ class ViewCompanyProfile extends Component {
                                             )}
                                     </div>
                                     <div style={{ textAlign: "-webkit-center" }}>
-                                        <h3>{this.state.company.name}</h3>
+                                        <h3>{this.state.company.mentorName}</h3>
+                                    </div>
+                                    <div style={{ textAlign: "-webkit-center" }}>
+                                        <h4>{this.state.company.name}</h4>
                                     </div>
                                     <div style={{ textAlign: "-webkit-center" }}>
                                         <LocationOnIcon style={{ fontSize: 30, display: "inline", paddingTop: "10px" }} color="primary" /><h4 style={{ display: "inline", paddingBottom: "90px" }}>{this.state.company.location}</h4>
